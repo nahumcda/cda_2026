@@ -28,6 +28,8 @@ Hay dos formas de abrir un notebook del repositorio directamente en Colab:
 
 > Ajusta la rama (`main`) en los enlaces anteriores si publicas el repositorio con otro nombre de rama por defecto.
 
+> **Nota sobre el permiso de GitHub que pide Colab:** al abrir un notebook con el badge "Open in Colab", Google puede pedirte autorizar a *Colaboratory* con acceso de **lectura y escritura a tus repositorios públicos**. Esto no es una configuración de este repositorio, sino una limitación del propio Colab: GitHub no ofrece a las apps un permiso de "solo lectura" para repositorios, así que Colab siempre solicita el más amplio disponible. No hace falta aceptarlo para abrir y ejecutar el notebook (puedes pulsar "Cancel"); y, en cualquier caso, como no eres colaborador/a de este repositorio, ese permiso no te da capacidad de escribir en él — solo aplicaría a repositorios sobre los que ya tengas acceso de escritura (por ejemplo, tu propio fork). Para guardar tu trabajo utiliza siempre la opción del punto 3 (`Guardar una copia en Drive`), nunca "Guardar una copia en GitHub".
+
 ### 3. Guardar tu propia copia
 Antes de empezar a trabajar sobre un notebook, guarda una copia en tu Google Drive con `Archivo > Guardar una copia en Drive`, para poder editarlo y conservar tus cambios sin modificar el original del repositorio.
 
@@ -51,22 +53,35 @@ Si un ejercicio necesita ficheros de datos, el propio notebook incluirá las ins
 ##### 3.1 Tipos de objetos 
 ###### 3.1.1 Atributos
 ###### 3.1.2 Métodos
-##### 3.2 Tipos básicos
-##### 3.3 Estructuras simples de datos
+##### 3.2 Tipos básicos (`int`, `float`, `str`, `bool`, `None`, f-strings, conversión de tipos)
+##### 3.3 Estructuras simples de datos (incluye mutabilidad e inmutabilidad)
 ###### 3.3.1 Listas - List
 ###### 3.3.2 Tuplas 
 ###### 3.3.3 Diccionarios - Dict
 ###### 3.3.4 Conjuntos - Set
-##### 3.4 Estructuras mutables e inmutables
-##### 3.5 Estructuras lógicas
-###### 3.5.1 If Else
-###### 3.5.2 While
-###### 3.5.3 For
+##### 3.4 Estructuras lógicas
+###### 3.4.1 If Else
+###### 3.4.2 While
+###### 3.4.3 For
+###### 3.4.4 Manejo de errores (`try` / `except`)
 #### 4. Funciones
 ##### 4.1 Funciones Avanzadas
-##### 4.1 Funciones Lambda
-#### 5. Imports
-#### 6. Compresion de listas, conjuntos y cadenas 
+##### 4.2 Funciones Lambda
+#### 5. Imports (incluye instalación de librerías con `pip`)
+#### 6. Comprensión de listas, conjuntos y cadenas
+
+**Ejercicios a realizar en esta clase:**
+
+| Ejercicio | Qué hay que hacer |
+|---|---|
+| 1.1 | Ampliar `hola_mundo_nombre` para que admita también un argumento `planeta`. |
+| 1.2 | Comprobar en Colab la versión de Python (`!python --version` y `sys.version`). |
+| 2.1 | Repasar la introducción oficial a Colab y adjuntar una captura de pantalla como evidencia. |
+| 2.2 | Crear una celda con `print("Hola, Mundo!")`, explicarla y ejecutarla. |
+| 3.1 | Explicar por qué los tipos escalares se comportan como inmutables en el ejemplo visto. |
+| 3.2 | Explicar a qué se debe el error al intentar indexar un `set`. |
+| 4.1 | Ordenar una lista de palabras según el número de veces que aparece la letra "a", usando `sort`/`sorted` y una función `lambda`. |
+| Ejercicio final | Repaso integrador con una cartera de pólizas: función con recargo, comprensión de diccionarios, control de flujo (`if`/`else`) y manejo de errores (`try`/`except`). |
 
 ### Clase 2 - Tratamiento de datos
 #### 1. Algebra lineal con Numpy
