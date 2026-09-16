@@ -84,8 +84,46 @@ Si un ejercicio necesita ficheros de datos, el propio notebook incluirá las ins
 | Ejercicio final | Repaso integrador con una cartera de pólizas: función con recargo, comprensión de diccionarios, control de flujo (`if`/`else`) y manejo de errores (`try`/`except`). |
 
 ### Clase 2 - Tratamiento de datos
-#### 1. Algebra lineal con Numpy
-#### 2. Análisis de datos tabulares con Pandas
+#### 2.1 Matplotlib
+#### 2.2 Numpy
+##### 2.2.1 Índices
+##### 2.2.2 Objeto mutable
+##### 2.2.3 Operaciones *element wise*
+##### 2.2.4 Operaciones matriciales
+##### 2.2.5 `ndarray` vs `matrix`
+##### 2.2.6 Álgebra lineal con numpy
+##### 2.2.7 Información de interés sobre el uso de numpy
+#### 2.3 Pandas
+##### 2.3.1 Introducción a las estructuras de datos (Series y DataFrames)
+##### 2.3.2 Creación de series y dataframes
+##### 2.3.3 Creación de dataframes a partir de distintos orígenes de datos (CSV, Excel, BBDD)
+##### 2.3.4 Inspección de datos (`head`, `tail`, `sample`, `describe`, `info`, `value_counts`)
+##### 2.3.5 Selección de datos en series y dataframes (`loc`, `iloc`...)
+##### 2.3.6 Edición de datos en series y dataframes
+##### 2.3.7 Unión de series y dataframes (`concat`, `merge`)
+##### 2.3.8 Operaciones de agregación y estadística
+##### 2.3.9 Agrupaciones (`groupby`)
+##### 2.3.10 Gestión de duplicados
+##### 2.3.11 Ordenación y clasificación
+##### 2.3.12 Gestión de valores nulos
+##### 2.3.13 Herramientas de visualización
+##### 2.3.14 Bibliografía
+
+**Ejercicios a realizar en esta clase:**
+
+| Ejercicio | Qué hay que hacer |
+|---|---|
+| 2.1 | Generar una muestra de puntos que siga $Y=2.5X+20$ y representarla como recta y como nube de puntos. |
+| 2.2 | Lo mismo con $Y=5X+500$. |
+| 2.3 | Representar la función logística (sigmoide) entre -20 y 20. |
+| 2.4 | Resolver con álgebra matricial: cuántos pollos y conejos hay sabiendo que hay 35 cabezas y 94 patas. |
+| 2.5 | Resolver con álgebra matricial: cuántas pastillas grandes, medianas y pequeñas se fabricaron con 450 g y 60 pastillas en total. |
+| 2.3.1 | Explicar qué ocurre (y por qué) al ejecutar `s.iloc[-4,0]`. |
+| 2.3.2 | Con `where`, convertir a negativo los valores ≤ 5 de la serie de los 10 primeros números. |
+| 2.3.3 | Lo mismo sobre un dataframe 4x4 con los números del 1 al 16. |
+| 2.3.4 | Eliminar del dataframe de ventas los duplicados por producto y categoría. |
+| 2.3.5 | Hacer un gráfico de barras con el rating medio por año. |
+| 2.3.6 | Hacer, para cada año, un diagrama de tarta con el número de reseñas por región de Rioja. |
 
 ### Clase 3 - EDA 1
 #### 1. Introducción al Analisis Exploratorio de datos - EDA (Exploratory Data Analysis)
